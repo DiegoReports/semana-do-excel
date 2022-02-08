@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #header {
@@ -66,6 +66,50 @@ body {
           }
         }
       }
+    }
+  }
+
+  .bi-list {
+    font-size: 3rem;
+    color: $white;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+//Media Queries
+
+@media (max-width: 800px) {
+  #header {
+    .bi-list {
+      display: block;
+    }
+
+    nav {
+      position: fixed;
+      top: -120%;
+      left: 0;
+      height: calc(100vh - 5rem);
+      width: 100vw;
+      background: $blue;
+
+      ul {
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+
+        li {
+          margin: 2rem 0;
+
+          a {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+
+    .nav-toggle {
+      top: 11.6rem;
     }
   }
 }
