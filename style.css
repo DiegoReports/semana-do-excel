@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+}
+
+#header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 4rem;
+  background: #023859;
+  -webkit-box-shadow: 0 0.1rem 0.3rem #999;
+          box-shadow: 0 0.1rem 0.3rem #999;
+  z-index: 1100;
+}
+
+#header .logo img {
+  height: 10.5rem;
+}
+
+#header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#header nav ul li {
+  margin-right: 2rem;
+}
+
+#header nav ul li a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#header nav ul li a:hover {
+  color: #f2b705;
+}
+/*# sourceMappingURL=style.css.map */
