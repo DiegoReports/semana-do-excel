@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   font-family: 'Exo 2', sans-serif;
@@ -148,6 +148,109 @@ body {
 #home .content .icons i:hover {
   text-decoration: none;
   color: #f2b705;
+}
+
+#conteudo {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#conteudo .heading {
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: 2rem 0;
+  color: #f2f2f2;
+  text-align: center;
+  position: relative;
+  color: #023859;
+}
+
+#conteudo .heading::after {
+  content: '';
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.3rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: #333;
+}
+
+#conteudo .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#conteudo .box-container .box {
+  height: 25rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 0.3rem #333;
+          box-shadow: 0 0 0.3rem #333;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#conteudo .box-container .box img {
+  height: 35%;
+  width: 35%;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+}
+
+#conteudo .box-container .box p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #f2f2f2;
+  opacity: 0;
+  -webkit-transform: translateY(12rem);
+          transform: translateY(12rem);
+}
+
+#conteudo .box-container .box:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+
+#conteudo .box-container .box:hover img {
+  height: 25%;
+  width: 25%;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+#conteudo .box-container .box:hover {
+  background: #f2b705;
 }
 
 @-webkit-keyframes background {
