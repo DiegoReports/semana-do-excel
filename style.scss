@@ -32,7 +32,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
   padding: 1rem 4rem;
   background: $blue;
@@ -74,6 +74,133 @@ body {
     color: $white;
     cursor: pointer;
     display: none;
+  }
+}
+
+// Secao Home
+#home {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      76.34deg,
+      #ffffff 52.45%,
+      rgba(196, 196, 196, 0) 52.49%
+    ),
+    url(./assets/back1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: background 10s alternate infinite;
+
+  .content {
+    position: relative;
+
+    h1 {
+      font-size: 6rem;
+      color: $blue;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 5rem;
+      color: $blue;
+    }
+
+    h3 {
+      font-size: 3rem;
+      color: $light-blue;
+      margin: 1rem 0;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      border-radius: 5rem;
+      background: $blue;
+      color: $white;
+      cursor: pointer;
+      height: 4rem;
+      width: 18rem;
+      font-size: 2rem;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+
+    .icons {
+      position: absolute;
+      left: 2rem;
+      bottom: -65%;
+
+      i {
+        line-height: 4rem;
+        text-align: center;
+        /* background: $blue; */
+        border-radius: 5rem;
+        font-size: 3.7rem;
+        color: $blue;
+        margin-right: 1.5rem;
+        transition: 0.4s;
+
+        &:hover {
+          text-decoration: none;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+@keyframes background {
+  0%,
+  100% {
+    background: linear-gradient(
+        76.34deg,
+        #ffffff 52.45%,
+        rgba(196, 196, 196, 0) 52.49%
+      ),
+      url(./assets/back1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  25% {
+    background: linear-gradient(
+        76.34deg,
+        #ffffff 52.45%,
+        rgba(196, 196, 196, 0) 52.49%
+      ),
+      url(./assets/back2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  50% {
+    background: linear-gradient(
+        76.34deg,
+        #ffffff 52.45%,
+        rgba(196, 196, 196, 0) 52.49%
+      ),
+      url(./assets/back3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  75% {
+    background: linear-gradient(
+        76.34deg,
+        #ffffff 52.45%,
+        rgba(196, 196, 196, 0) 52.49%
+      ),
+      url(./assets/back4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
 
