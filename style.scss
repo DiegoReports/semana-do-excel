@@ -133,6 +133,7 @@ body {
       position: absolute;
       left: 2rem;
       bottom: -65%;
+      width: 100%;
 
       i {
         line-height: 4rem;
@@ -207,6 +208,10 @@ body {
 //Media Queries
 
 @media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
   #header {
     .bi-list {
       display: block;
@@ -237,6 +242,27 @@ body {
 
     .nav-toggle {
       top: 11.6rem;
+    }
+  }
+
+  #home {
+    animation: none;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(./assets/back-md.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .content {
+      text-shadow: 0.1rem 0.1rem 0.3rem $black;
+
+      .icons {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }
