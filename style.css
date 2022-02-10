@@ -105,7 +105,7 @@ body {
 
 #home .content h3 {
   font-size: 3rem;
-  color: #84c0d8;
+  color: #5e8899;
   margin: 1rem 0;
 }
 
@@ -352,10 +352,12 @@ body {
     background-position: center;
     background-attachment: fixed;
   }
-  #home .content {
+  #home .content h1,
+  #home h2 {
     text-shadow: 0.1rem 0.1rem 0.3rem #262626;
   }
-  #home .content .icons {
+  #home .content h1 .icons,
+  #home h2 .icons {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
