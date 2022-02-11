@@ -215,23 +215,35 @@ body {
         transform: translateY(5rem);
       }
 
+      h2 {
+        display: block;
+        transform: translateY(6rem);
+      }
+
+      &:hover h2 {
+        display: block;
+        transform: translateY(0rem);
+      }
+
       p {
         font-size: 1.3rem;
         text-align: center;
         color: $white;
         opacity: 0;
         transform: translateY(12rem);
+        padding: 0 0.4rem;
       }
 
       &:hover p {
         opacity: 1;
         transform: translateY(0rem);
+        margin: 0 1rem;
       }
 
       &:hover img {
         height: 25%;
         width: 25%;
-        transform: translateY(-2rem);
+        transform: translateY(-1rem);
       }
 
       &:hover {
@@ -344,7 +356,8 @@ body {
     background-attachment: fixed;
 
     .content h1,
-    h2 {
+    h2,
+    .icons {
       text-shadow: 0.1rem 0.1rem 0.3rem $black;
 
       .icons {

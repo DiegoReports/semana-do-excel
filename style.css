@@ -227,6 +227,18 @@ body {
           transform: translateY(5rem);
 }
 
+#conteudo .box-container .box h2 {
+  display: block;
+  -webkit-transform: translateY(6rem);
+          transform: translateY(6rem);
+}
+
+#conteudo .box-container .box:hover h2 {
+  display: block;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+
 #conteudo .box-container .box p {
   font-size: 1.3rem;
   text-align: center;
@@ -234,19 +246,21 @@ body {
   opacity: 0;
   -webkit-transform: translateY(12rem);
           transform: translateY(12rem);
+  padding: 0 0.4rem;
 }
 
 #conteudo .box-container .box:hover p {
   opacity: 1;
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
+  margin: 0 1rem;
 }
 
 #conteudo .box-container .box:hover img {
   height: 25%;
   width: 25%;
-  -webkit-transform: translateY(-2rem);
-          transform: translateY(-2rem);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
 
 #conteudo .box-container .box:hover {
@@ -353,11 +367,13 @@ body {
     background-attachment: fixed;
   }
   #home .content h1,
-  #home h2 {
+  #home h2,
+  #home .icons {
     text-shadow: 0.1rem 0.1rem 0.3rem #262626;
   }
   #home .content h1 .icons,
-  #home h2 .icons {
+  #home h2 .icons,
+  #home .icons .icons {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
