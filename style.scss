@@ -253,6 +253,61 @@ body {
   }
 }
 
+// Aprendizado Section
+
+#aprendizado {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: $light-blue;
+
+  .heading {
+    @include heading();
+    margin-bottom: 2.5rem;
+  }
+
+  .box-container {
+    width: 90%;
+
+    .box {
+      background: $white;
+      max-width: 60rem;
+      border-radius: 5rem;
+      box-shadow: 0 0 0.3rem #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 4rem 2rem;
+      margin: 2rem;
+      clear: both;
+
+      img {
+        height: 7rem;
+        margin-right: 4rem;
+      }
+
+      .info {
+        padding-left: 2.5rem;
+        border-left: 0.4rem solid $light-blue;
+
+        h2 {
+          font-size: 3rem;
+          color: $light-blue;
+        }
+
+        p {
+          font-size: 1.5rem;
+          color: #333;
+        }
+      }
+    }
+    .box:nth-child(2) {
+      float: right;
+    }
+  }
+}
+
 @keyframes background {
   0%,
   100% {
@@ -363,6 +418,33 @@ body {
       .icons {
         left: 50%;
         transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #aprendizado {
+    .box-container {
+      .box {
+        flex-flow: column;
+        padding: 1.5rem;
+
+        img {
+          height: 10rem;
+          margin: 1rem;
+        }
+
+        .info {
+          padding-left: 0;
+          padding-top: 3rem;
+          border: none;
+          text-align: center;
+
+          p {
+            padding: 1rem;
+          }
+        }
       }
     }
   }
