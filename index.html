@@ -43,7 +43,7 @@
         <ul>
           <li><a href="#home">Inicio</a></li>
           <li><a href="#conteudo">Conteúdo</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#aprendizado">Aprendizado</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -82,7 +82,7 @@
 
       <div class="box-container">
         <div class="box">
-          <img src="./assets/plan.svg" alt="" />
+          <img src="./assets/plan.svg" alt="planilha" />
           <h2>Fundamentos</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
@@ -93,7 +93,7 @@
         </div>
 
         <div class="box">
-          <img src="./assets/table.svg" alt="" />
+          <img src="./assets/table.svg" alt="tabela" />
           <h2>Tabela Dinâmica</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
@@ -104,8 +104,8 @@
         </div>
 
         <div class="box">
-          <img src="./assets/decisions.svg" alt="" />
-          <h2>Uso da funcão SE</h2>
+          <img src="./assets/decisions.svg" alt="função SE" />
+          <h2>Uso da função SE</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             maiores quisquam corporis autem delectus excepturi obcaecati nostrum
@@ -115,8 +115,41 @@
         </div>
 
         <div class="box">
-          <img src="./assets/charts.svg" alt="" />
+          <img src="./assets/charts.svg" alt="graficos" />
           <h2>Gráficos Personalizados</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            maiores quisquam corporis autem delectus excepturi obcaecati nostrum
+            quaerat, corrupti reiciendis nihil ad porro est fuga recusandae
+            magnam eum veritatis reprehenderit!
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./assets/sinal-fx.png" alt="função PROCV" />
+          <h2>Função PROCV</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            maiores quisquam corporis autem delectus excepturi obcaecati nostrum
+            quaerat, corrupti reiciendis nihil ad porro est fuga recusandae
+            magnam eum veritatis reprehenderit!
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./assets/table.png" alt="elemento tabela" />
+          <h2>Elemento tabela</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            maiores quisquam corporis autem delectus excepturi obcaecati nostrum
+            quaerat, corrupti reiciendis nihil ad porro est fuga recusandae
+            magnam eum veritatis reprehenderit!
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./assets/atalhos.png" alt="atalhos excel" />
+          <h2>Atalhos no Excel</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             maiores quisquam corporis autem delectus excepturi obcaecati nostrum
@@ -128,6 +161,55 @@
     </section>
     <!-- secao conteudo fim-->
 
+    <!-- secao aprendizado inicio -->
+    <section id="#aprendizado">
+      <h1 class="heading">Aprendizado como Foco</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/teaching.png" alt="professores escola methodos" />
+          <div class="info">
+            <h2>Professores capacitados</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              omnis fugit ea odit reprehenderit excepturi, sunt dolore minima
+              est alias cumque accusantium, in praesentium eveniet possimus cum!
+              Incidunt, facere error.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/document.png" alt="professores escola methodos" />
+          <div class="info">
+            <h2>Certificado de Conclusão</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              omnis fugit ea odit reprehenderit excepturi, sunt dolore minima
+              est alias cumque accusantium, in praesentium eveniet possimus cum!
+              Incidunt, facere error.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="./assets/technical-support.png"
+            alt="professores escola methodos"
+          />
+          <div class="info">
+            <h2>Suporte á dúvidas</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              omnis fugit ea odit reprehenderit excepturi, sunt dolore minima
+              est alias cumque accusantium, in praesentium eveniet possimus cum!
+              Incidunt, facere error.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- secao aprendizado fim -->
+
     <script>
       $(document).ready(function () {
         $('.bi-list').click(function () {
@@ -135,7 +217,7 @@
           $('nav').toggleClass('nav-toggle')
         })
 
-        $(window).scroll(function () {
+        $(window).on('load scroll', function () {
           if ($(window).scrollTop() > 20) {
             $('#header').css('top', '0')
 
