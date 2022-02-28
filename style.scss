@@ -308,6 +308,71 @@ body {
   }
 }
 
+#depoimentos {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: $black;
+
+  .heading {
+    @include heading();
+
+    &::after {
+      background: $yellow;
+    }
+  }
+
+  .box-container {
+    width: 90%;
+
+    .box {
+      max-width: 60rem;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2rem;
+      margin-left: 5rem;
+      padding-left: 6rem;
+      position: relative;
+      clear: both;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: -9%;
+        transform: translateY(-50%);
+        height: 10rem;
+        width: 10rem;
+        border-radius: 10rem;
+        border: 0.5rem solid $yellow;
+        box-shadow: 0 0 5rem $yellow inset;
+        object-fit: cover;
+      }
+
+      .info {
+        h2 {
+          margin-top: -2.5rem;
+          margin: 2rem;
+          color: $light-blue;
+          text-align: right;
+        }
+
+        p {
+          font-size: 1.6rem;
+          padding: 1rem;
+          color: #333;
+        }
+      }
+    }
+
+    .box:nth-child(even) {
+      float: right;
+    }
+  }
+}
+
 @keyframes background {
   0%,
   100% {
