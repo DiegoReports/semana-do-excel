@@ -432,6 +432,11 @@ body {
   color: #333;
 }
 
+#depoimentos .box-container .box .info p i {
+  padding: 1rem;
+  color: #f2b705;
+}
+
 #depoimentos .box-container .box:nth-child(even) {
   float: right;
 }
@@ -569,6 +574,33 @@ body {
   }
   #aprendizado .box-container .box .info p {
     padding: 1rem;
+  }
+  #depoimentos .box-container .box {
+    padding: 5rem;
+    margin-top: 13rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #depoimentos .box-container .box img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -30%;
+    height: 15rem;
+    width: 15rem;
+  }
+  #depoimentos .box-container .box .info {
+    text-align: center;
+  }
+  #depoimentos .box-container .box .info p {
+    padding-top: 9rem;
+  }
+  #depoimentos .box-container .box .info h2 {
+    text-align: center;
+    margin: 1.5rem;
+  }
+  #depoimentos .box-container .box:nth-child(even) {
+    float: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

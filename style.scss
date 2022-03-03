@@ -363,6 +363,11 @@ body {
           font-size: 1.6rem;
           padding: 1rem;
           color: #333;
+
+          i {
+            padding: 1rem;
+            color: $yellow;
+          }
         }
       }
     }
@@ -510,6 +515,42 @@ body {
             padding: 1rem;
           }
         }
+      }
+    }
+  }
+
+  #depoimentos {
+    .box-container {
+      .box {
+        padding: 5rem;
+        margin-top: 13rem;
+        margin-left: 0;
+        margin-right: 0;
+
+        img {
+          left: 50%;
+          transform: translateX(-50%);
+          top: -30%;
+          height: 15rem;
+          width: 15rem;
+        }
+
+        .info {
+          text-align: center;
+
+          p {
+            padding-top: 9rem;
+          }
+
+          h2 {
+            text-align: center;
+            margin: 1.5rem;
+          }
+        }
+      }
+
+      .box:nth-child(even) {
+        float: none;
       }
     }
   }
