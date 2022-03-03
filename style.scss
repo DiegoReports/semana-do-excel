@@ -189,6 +189,10 @@ body {
     color: $blue;
   }
 
+  .heading::after {
+    background: $yellow;
+  }
+
   .box-container {
     display: flex;
     align-items: center;
@@ -265,6 +269,10 @@ body {
   .heading {
     @include heading();
     margin-bottom: 2.5rem;
+  }
+
+  .heading::after {
+    background: $yellow;
   }
 
   .box-container {
@@ -378,6 +386,93 @@ body {
   }
 }
 
+#guia {
+  min-height: 100vh;
+  width: 100vw;
+
+  .heading {
+    @include heading();
+    color: $blue;
+
+    &::after {
+      background: $yellow;
+      width: 20%;
+    }
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    min-height: calc(100vh - 6.5rem);
+    margin: 0 2rem 0 2rem;
+
+    .image {
+      flex: 1 1 42rem;
+      text-align: center;
+
+      img {
+        height: 30rem;
+        width: 30rem;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      flex: 1 1 42rem;
+
+      h3 {
+        color: $black;
+        font-size: 4rem;
+        padding-bottom: 0.5rem;
+      }
+
+      span {
+        font-size: 3rem;
+        color: $blue;
+        padding: 0.5rem 0;
+        display: block;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $black;
+        line-height: 2;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        background: $blue;
+        padding: 0.7rem;
+        font-size: 1.7rem;
+        color: $white;
+        padding-left: 2rem;
+
+        img {
+          height: 4rem;
+          width: 4rem;
+          line-height: 4rem;
+          border-radius: 50%;
+          margin-left: 1rem;
+          transition: 0.2s linear;
+        }
+
+        &:hover {
+          background: $yellow;
+        }
+
+        &:hover img {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+
 @keyframes background {
   0%,
   100% {
@@ -430,6 +525,28 @@ body {
 }
 
 //Media Queries
+
+@media (max-width: 920px) {
+  .hero {
+    text-align: center;
+
+    .image img {
+      height: 30rem;
+      width: 30rem;
+      margin-top: 3rem;
+    }
+
+    .content {
+      h3 {
+        font-size: 3rem;
+      }
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
 
 @media (max-width: 800px) {
   html {
