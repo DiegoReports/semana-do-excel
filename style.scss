@@ -473,6 +473,64 @@ body {
   }
 }
 
+#inscrever {
+  display: grid;
+  place-items: center;
+  background: linear-gradient($light-blue, $light-blue),
+    url(./assets/class.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+
+  .heading {
+    @include heading();
+    color: $blue;
+
+    &::after {
+      background: $yellow;
+    }
+  }
+
+  form {
+    background: $yellow;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem;
+
+    .inputBox {
+      text-align: center;
+      position: relative;
+      /*       margin: 2rem 2rem; */
+      /*       flex: 1 1 0%; */
+
+      i {
+        position: absolute;
+        left: 12.5rem;
+        top: 2rem;
+        font-size: 2rem;
+        transform: translateY(-50%);
+      }
+
+      label {
+        font-size: 2rem;
+      }
+
+      input {
+        outline: none;
+        padding: 0 3.5rem;
+        height: 4rem;
+        border-radius: 0.5rem;
+        border: 0.4rem solid #333;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
 @keyframes background {
   0%,
   100% {

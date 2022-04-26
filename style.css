@@ -565,6 +565,85 @@ body {
   margin-left: 2rem;
 }
 
+#inscrever {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5e8899), to(#5e8899)), url(./assets/class.jpg) no-repeat;
+  background: linear-gradient(#5e8899, #5e8899), url(./assets/class.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+}
+
+#inscrever .heading {
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: 2rem 0;
+  color: #f2f2f2;
+  text-align: center;
+  position: relative;
+  color: #023859;
+}
+
+#inscrever .heading::after {
+  content: '';
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.3rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: #333;
+}
+
+#inscrever .heading::after {
+  background: #f2b705;
+}
+
+#inscrever form {
+  background: #f2b705;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 1rem;
+          box-shadow: 0 0 1rem;
+}
+
+#inscrever form .inputBox {
+  text-align: center;
+  position: relative;
+  /*       margin: 2rem 2rem; */
+  /*       flex: 1 1 0%; */
+}
+
+#inscrever form .inputBox i {
+  position: absolute;
+  left: 12.5rem;
+  top: 2rem;
+  font-size: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#inscrever form .inputBox label {
+  font-size: 2rem;
+}
+
+#inscrever form .inputBox input {
+  outline: none;
+  padding: 0 3.5rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 0.4rem solid #333;
+  font-size: 1.5rem;
+}
+
 @-webkit-keyframes background {
   0%,
   100% {
